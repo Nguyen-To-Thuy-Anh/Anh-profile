@@ -92,7 +92,7 @@ li:last-child {
 }
 
 #home h4 {
-  width: 90%;
+  width: 77%;
   text-align: justify;
 }
 
@@ -335,4 +335,50 @@ li:last-child {
 
   #skills a{
       color: rgb(180, 96, 0);
+  }
+
+  .heading-title{
+    animation-name: hieu-ung-di-chuyen-sang-phai;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+  
+  .heading-title2{
+    animation-name: hieu-ung-di-chuyen-sang-trai;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+  
+  .heading-sub{
+    animation-name: hieu-ung-di-chuyen-sang-phai;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+  
+  /* Hieu ung di chuyen */
+  @keyframes hieu-ung-di-chuyen-sang-trai{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80%{
+        transform: translateX(15px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+  }
+  @keyframes hieu-ung-di-chuyen-sang-phai{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80%{
+        transform: translateX(-15px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
   }
