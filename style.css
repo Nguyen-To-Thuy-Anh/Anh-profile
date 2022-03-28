@@ -1,9 +1,26 @@
 body {
+    background-image: url(https://softbuzz.net/wp-content/uploads/2019/10/background-de-thuong-softbuzz-5-1024x768.jpeg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-origin: padding-box;
+    background-size: 75%;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
     margin: 0;
 }  
+
+@media only screen and (max-width: 1200px){
+    body {
+    background-image: none;
+  }
+}
+@media only screen and (max-width: 1280px){
+    .img-profile {
+    visibility: hidden;
+  }
+}
 
 li {
     text-align: center;
@@ -14,11 +31,9 @@ li:last-child {
 }
 
 #nav {
-    padding:auto;
-
-    
+    margin:auto;
 }
-
+ 
 #nav ul {
     list-style-type: none; /* xóa các đầu mục*/
     margin: 0;
@@ -32,7 +47,7 @@ li:last-child {
 
 #nav li a {
     display: block;
-    color: rgb(255, 255, 255);
+    color: #ffcb8f;
     padding: 8px 16px;
 }
   
@@ -58,23 +73,33 @@ li:last-child {
     max-height: 200px;
     -webkit-border-radius: 200px;
     border-radius: 200px;
-    margin: 42px;
-    margin-top: 300px;
+    margin: 60px ;
+    margin-top: 350px;
 }
 
 #nav .img-profile {
     position:absolute;
 }
+
 #bottom {
     padding-top: 100px;
     width: 25%;
     background-color:rgb(180, 96, 0);
     position:fixed;
 }
+
+@media only screen and (max-width: 1280px){
+    #bottom{
+        padding-top: 200px;
+    }
+}
+
 #home {
+    width: 100%;
     padding-top: 12%;
-    padding-bottom: 12%;
+    padding-bottom: 25%;
     padding-left: 30%;
+    text-align: center;
 }
 
 #home h1 {
@@ -86,9 +111,8 @@ li:last-child {
 #home p {
     font-size: 3rem;
     text-transform: uppercase;
-    letter-spacing: 60px;
     color: #ffcb8f;
-    width: 90%;
+    width: 100%;
 }
 
 #home h4 {
@@ -124,7 +148,6 @@ li:last-child {
     list-style-type: none; /* xóa các đầu mục*/
     margin: 0;
     padding: 0;
-    
     overflow: auto; /* nếu nội dung quá dài sẽ có thêm thanh cuộn để xem phần còn lại */
 }
 
@@ -149,10 +172,61 @@ li:last-child {
     font-weight: bold;
 }
 
+#home .left{
+    text-align: left;
+}
+/* After the report */
+#home .heading-title{
+    animation-name: hieu-ung-di-chuyen-sang-phai;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+  
+  #home .heading-title2{
+    animation-name: hieu-ung-di-chuyen-sang-trai;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+  
+  #home .heading-sub{
+    animation-name: hieu-ung-di-chuyen-sang-phai;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+  
+  /* Hieu ung di chuyen */
+  @keyframes hieu-ung-di-chuyen-sang-trai{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80%{
+        transform: translateX(15px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+  }
+  @keyframes hieu-ung-di-chuyen-sang-phai{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80%{
+        transform: translateX(-15px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+  }
+/*  */
 #inf {
     padding-top: 12%;
     padding-bottom: 25%;
     padding-left: 30%;
+    width: 90%;
 }
 
 #inf .inf-caption {
@@ -203,6 +277,7 @@ li:last-child {
     text-align: justify;
 }
 
+
 #exp .inf-caption {
     padding: auto;
     width: 90%;
@@ -235,6 +310,64 @@ li:last-child {
     font-size: 2rem;
     color: rgb(71, 71, 71);
 }
+
+#exp h4 {
+    width: 90%;
+    text-align: justify;
+  }
+/* After the report */
+  #proj {
+    padding-top: 5%;
+    padding-bottom: 25%;
+    padding-left: 30%;
+    width: 90%;
+    text-align: justify;
+}
+
+#proj .proj-1{
+    font-size: 3rem;
+    color:rgb(180, 96, 0);
+}
+
+#proj .proj-2{
+    font-size: 2rem;
+    opacity: 0.7;
+    color: rgb(71, 71, 71);
+}
+
+#proj .proj-3-small-text{
+    font-size: 1.5rem;
+    opacity: 0.7;
+    color: rgb(0, 3, 180);
+    text-align:end;
+}
+
+#proj .proj-4{
+    font-size: 2rem;
+    color: rgb(71, 71, 71);
+}
+
+#proj h4 {
+    width: 77%;
+    text-align: justify;
+  }
+
+
+  #proj .inf-caption {
+    padding: auto;
+    width: 90%;
+    font-size: 4rem;
+    color:#000000;
+    font-weight: 800;
+    margin-left:10px;
+    text-transform: uppercase;
+}
+
+#proj h4 {
+    width: 90%;
+    text-align: justify;
+  }
+/*  */
 
 #edu {
     padding-top: 12%;
@@ -277,8 +410,13 @@ li:last-child {
     color: rgb(71, 71, 71);
 }
 
+#edu h4 {
+    width: 90%;
+    text-align: justify;
+  }
+
 #skills{
-    padding-top: 10%;
+    padding-top: 8%;
     padding-bottom: 12%;
     padding-left: 30%;
     width: 90%;
@@ -312,6 +450,7 @@ li:last-child {
     padding: 0;
     border-radius: 200px;
     color: rgb(180, 96, 0);
+    margin-bottom: 2rem;
   }
 
   #skills .nav-justify-content-center{
@@ -337,48 +476,4 @@ li:last-child {
       color: rgb(180, 96, 0);
   }
 
-  .heading-title{
-    animation-name: hieu-ung-di-chuyen-sang-phai;
-    animation-duration: 2s;
-    animation-timing-function: ease-out;
-  }
   
-  .heading-title2{
-    animation-name: hieu-ung-di-chuyen-sang-trai;
-    animation-duration: 2s;
-    animation-timing-function: ease-out;
-  }
-  
-  .heading-sub{
-    animation-name: hieu-ung-di-chuyen-sang-phai;
-    animation-duration: 2s;
-    animation-timing-function: ease-out;
-  }
-  
-  /* Hieu ung di chuyen */
-  @keyframes hieu-ung-di-chuyen-sang-trai{
-    0%{
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-    80%{
-        transform: translateX(15px);
-    }
-    100%{
-        opacity: 1;
-        transform: translate(0);
-    }
-  }
-  @keyframes hieu-ung-di-chuyen-sang-phai{
-    0%{
-        opacity: 0;
-        transform: translateX(100px);
-    }
-    80%{
-        transform: translateX(-15px);
-    }
-    100%{
-        opacity: 1;
-        transform: translate(0);
-    }
-  }
