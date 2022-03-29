@@ -10,13 +10,18 @@ body {
     line-height: 1.5;
     margin: 0;
 }  
-
-@media only screen and (max-width: 1200px){
+/* Nếu chiều rộng của trình duyệt nhỏ hơn hoặc bằng 1200px thì ẩn background */
+@media only screen and (max-width: 1080px){
     body {
     background-image: none;
   }
 }
-
+/* Nếu chiều rộng của trình duyệt nhỏ hơn hoặc bằng 1280px thì ẩn image */
+@media only screen and (max-width: 1200px){
+    .img-profile {
+    visibility: hidden;
+  }
+}
 
 li {
     text-align: center;
@@ -42,6 +47,7 @@ li:last-child {
 }
 
 #nav li a {
+    font-size: 1.75rem;
     display: block;
     color: #ffcb8f;
     padding: 8px 16px;
@@ -69,8 +75,9 @@ li:last-child {
     max-height: 200px;
     -webkit-border-radius: 200px;
     border-radius: 200px;
-    margin: 60px ;
-    margin-top: 350px;
+    width: 100%;
+    margin: 40px ;
+    margin-top: 320px;
 }
 
 #nav .img-profile {
@@ -78,13 +85,13 @@ li:last-child {
 }
 
 #bottom {
-    padding-top: 100px;
+    padding-top: 80px;
     width: 25%;
     background-color:rgb(180, 96, 0);
     position:fixed;
 }
 
-@media only screen and (max-width: 1280px){
+@media only screen and (max-width: 1200px){
     #bottom{
         padding-top: 200px;
     }
@@ -348,6 +355,10 @@ li:last-child {
     text-align: justify;
   }
 
+  #proj a{
+    color:rgb(180, 96, 0);
+  }
+
 
   #proj .inf-caption {
     padding: auto;
@@ -465,7 +476,7 @@ li:last-child {
       font-size: 2rem;
       text-align: left;
       padding: 10px;
-      color: rgb(180, 96, 0);
+      color: rgb(0, 0, 0);
   }
 
   #skills a{
