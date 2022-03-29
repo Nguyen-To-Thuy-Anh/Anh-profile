@@ -16,11 +16,7 @@ body {
     background-image: none;
   }
 }
-@media only screen and (max-width: 1280px){
-    .img-profile {
-    visibility: hidden;
-  }
-}
+
 
 li {
     text-align: center;
@@ -126,7 +122,7 @@ li:last-child {
     background-color:rgb(180, 96, 0);
     -webkit-border-radius: 200px;
     font-size: 2rem;
-    margin-left: 2rem;
+    margin: 2rem;
     padding: 0;
     border-radius: 200px;
     color:#ffffff;
@@ -153,7 +149,7 @@ li:last-child {
 
 #home li a {
     display: block;
-    padding: 8px 16px;
+    padding: 9px 9px;
     color: #ffcb8f;
 }
 
@@ -180,6 +176,7 @@ li:last-child {
     animation-name: hieu-ung-di-chuyen-sang-phai;
     animation-duration: 2s;
     animation-timing-function: ease-out;
+    
   }
   
   #home .heading-title2{
@@ -302,7 +299,6 @@ li:last-child {
 #exp .exp-3-small-text{
     font-size: 1.5rem;
     opacity: 0.7;
-    color: rgb(0, 3, 180);
     text-align:end;
 }
 
