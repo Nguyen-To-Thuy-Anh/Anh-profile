@@ -17,7 +17,7 @@ body {
   }
 }
 /* Nếu chiều rộng của trình duyệt nhỏ hơn hoặc bằng 1280px thì ẩn image */
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1180px){
     .img-profile {
     visibility: hidden;
   }
@@ -91,7 +91,7 @@ li:last-child {
     position:fixed;
 }
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1180px){
     #bottom{
         padding-top: 200px;
     }
@@ -178,7 +178,7 @@ li:last-child {
 #home .left{
     text-align: left;
 }
-/* After the report */
+/* sau khi bao cao */
 #home .heading-title{
     animation-name: hieu-ung-di-chuyen-sang-phai;
     animation-duration: 2s;
@@ -318,7 +318,7 @@ li:last-child {
     width: 90%;
     text-align: justify;
   }
-/* After the report */
+/* sau khi bao cao */
   #proj {
     padding-top: 5%;
     padding-bottom: 25%;
